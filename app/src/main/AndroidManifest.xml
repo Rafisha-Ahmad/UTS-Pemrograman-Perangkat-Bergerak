@@ -12,10 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UTS">
         <activity
+            android:name=".Materi"
+            android:exported="false" />
+        <activity
             android:name=".About"
             android:exported="true">
             <intent-filter>
-<!--                <action android:name="android.intent.action.MAIN" />-->
+
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
