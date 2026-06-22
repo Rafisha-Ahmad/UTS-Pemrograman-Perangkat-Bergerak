@@ -11,29 +11,28 @@
         android:roundIcon="@drawable/ic_app_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UTS">
-
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
         <activity
             android:name=".DetailMateriActivity"
             android:exported="false"
             android:theme="@style/Theme.UTS.NoActionBar" />
-
         <activity
             android:name=".Materi"
             android:exported="false" />
-
         <activity
             android:name=".Dashboard"
             android:exported="false" />
-
         <activity
             android:name=".Login"
             android:exported="false" />
-
         <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
