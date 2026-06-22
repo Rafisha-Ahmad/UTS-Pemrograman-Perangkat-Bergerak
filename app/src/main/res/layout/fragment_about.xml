@@ -1,77 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F9FA"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_logo"
+                    app:tint="@color/navy_primary"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/app_name"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/navy_primary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textSize="14sp"
+                android:textColor="#808080"/>
+        </LinearLayout>
+
+
+        <!-- Tentang Aplikasi -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:text="Tentang Aplikasi"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/navy_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="CodeLearn merupakan platform pembelajaran mandiri yang menyediakan berbagai materi pemrograman mulai dari tingkat dasar hingga tingkat lanjut. Aplikasi ini membantu pengguna mempelajari bahasa pemrograman dengan mudah melalui materi yang terstruktur dan kuis interaktif."
+                    android:textSize="15sp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Informasi Aplikasi -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:text="Informasi Aplikasi"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/navy_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Versi : 1.0.0"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Build : 2026.01"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Update terakhir : Juni 2026"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Minimum Android : Android 8.0 (Oreo)"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Developer -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:text="Developer"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/navy_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kelompok 1 -PBL UTS"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="Email : support@codelearn.com"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Website : www.codelearn.com"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Instagram : @codelearn.id"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Fitur -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:text="Fitur Utama"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/navy_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="• Materi Pemrograman\n• Quiz Interaktif\n• Tampilan Sederhana dan Modern\n• Mudah Digunakan\n• Gratis Digunakan"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        app:cardCornerRadius="60dp"
-        app:cardElevation="4dp"
-        app:strokeColor="@color/navy_primary"
-        app:strokeWidth="2dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
 
-        <ImageView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kelompok 1 UTS PBL"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="24dp"
-            android:src="@drawable/ic_logo"
-            app:tint="@color/navy_primary" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="3dp"
+            android:text="Rafisha Ahmad | C030324052 | Splash &amp; Login&#10;Abdul Khalik Adi Darmawan | C030324056 | Dashboard&#10;Muhammad Sanny | C030324044 | Main&#10;Naindra Efriza Pasha | C030324099 | About&#10;Alya Nuruzzahrah | C030324008 | Profile &amp; Video"
+            android:textSize="15sp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/app_name"
-        android:textColor="@color/navy_primary"
-        android:textSize="28sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Versi 1.0.0"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp" />
+        <!-- Lisensi -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="CodeLearn adalah platform belajar mandiri untuk menguasai berbagai bahasa pemrograman dari dasar hingga mahir."
-        android:textColor="#424242"
-        android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="32dp"
-        android:background="#E0E0E0" />
+                <TextView
+                    android:text="Lisensi"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/navy_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Dikembangkan oleh:"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="© 2026 CodeLearn.\nAll Rights Reserved.\nAplikasi ini tidak memiliki lisensi resmi, dan hanya diperuntukan untuk memenuhi UTS mata kuliah Pemrograman Perangkat Bergerak."
+                    android:textSize="15sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Tim Developer CodeLearn"
-        android:textColor="@color/navy_primary"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+            </LinearLayout>
 
-</LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Made with Android Studio\nVersion 1.0.0"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</ScrollView>
